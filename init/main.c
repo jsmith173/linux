@@ -102,6 +102,10 @@
 #define CREATE_TRACE_POINTS
 #include <trace/events/initcall.h>
 
+#if !defined(CONFIG_SPI) || defined(CONFIG_SPI_SPIDEV) || !defined(CONFIG_MCP4822) 
+#error Wrong kernel config settings!
+#endif
+
 static int kernel_init(void *);
 
 extern void init_IRQ(void);
