@@ -5,4 +5,5 @@
 # When adding new entries keep the list in alphabetical order
 obj-$(CONFIG_AD9523) += ad9523.o
 obj-$(CONFIG_ADF4350) += adf4350.o
+obj-$(CONFIG_CF_AXI_DDS_AD9117) += ad9117.o
 obj-$(CONFIG_CF_AXI_DDS_AD9739A) += ad9739a.o
